@@ -39,6 +39,7 @@ int main(int argc,char *argv[])
 	if(err<0)
 	{
 		printf("bind error\n");
+		perror("bind");
 		return -1;
 	}
 
